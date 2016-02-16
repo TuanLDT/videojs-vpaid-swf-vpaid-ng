@@ -252,6 +252,11 @@ package com.videojs.vpaid {
                 return
             }
 
+            //ExternalInterface.call("console.info", "adRemainingTime", _vpaidAd.adRemainingTime);
+            if (_vpaidAd.adRemainingTime) {
+                _model.broadcastEventExternally(ExternalEventName.ON_VAST_CLOSE);
+            }
+
             _isPlaying = false;
             _isPaused = false;
             _hasEnded = true;
