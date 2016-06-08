@@ -21,7 +21,7 @@ package{
     import flash.utils.Timer;
     import flash.utils.setTimeout;
 
-    [SWF(backgroundColor="#000000", frameRate="60", width="480", height="270")]
+    [SWF(backgroundColor="#000000", frameRate="10", width="480", height="270")]
     public class VideoJS extends Sprite{
 
         public const VERSION:String = CONFIG::version;
